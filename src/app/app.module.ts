@@ -11,6 +11,7 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { MusicComponent } from './music/music.component';
 import { ImagesComponent } from './images/images.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -21,7 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
     BodyComponent,
     FooterComponent,
     MusicComponent,
-    ImagesComponent
+    ImagesComponent,
+    HeroesComponent
   ],
   imports: [
     BrowserModule,
