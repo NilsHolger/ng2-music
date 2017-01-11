@@ -12,8 +12,12 @@ import { FooterComponent } from './footer/footer.component';
 import { MusicComponent } from './music/music.component';
 import { ImagesComponent } from './images/images.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './heroes/hero-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { HeroesService } from './heroes/heroes.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,9 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     MusicComponent,
     ImagesComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroDetailComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +38,7 @@ import { AppRoutingModule } from './app-routing.module';
     MaterialModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [HeroesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

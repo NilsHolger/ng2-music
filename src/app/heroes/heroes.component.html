@@ -6,18 +6,14 @@
         <div class="col s12 m6">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-            <h2>My Heroes</h2>
+            <h2>Technologies</h2>
             <ul class="heroes">
-                <li *ngFor="let hero of heroes">
+                <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" 
+                    (click)="onSelect(hero)">
                     <span class="badge">{{hero.id}}</span>{{hero.name}}
                 </li>
             </ul>
-              <span class="card-title">{{hero.name}} details!</span>
-              <div><label>id: </label>{{hero.id}}</div>
-        <div>
-            <label>name: </label>
-            <input [(ngModel)]="hero.name" placeholder="name">
-        </div>
+                  <my-hero-detail [hero]="selectedHero"></my-hero-detail>  
             </div>
             <div class="card-action">
               <a href="https://google.com" target="_blank">Google</a>
