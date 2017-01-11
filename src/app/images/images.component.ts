@@ -14,7 +14,7 @@ export class ImagesComponent {
     { rows: 1, name: "Kobe", human: "Igor", age: 5},
     {rows: 2, name: "Porter", human: "Kara", age: 3},
     { rows: 1, name: "Stephen", human: "Stephen", age: 8},
-    {rows: 1, name: "Cinny", human: "Jules", age: 3},
+    {rows: 1, name: "Mickey", human: "Nils", age: 3},
     { rows: 1, name: "Hermes", human: "Kara", age: 3},
   ];
 

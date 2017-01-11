@@ -6,6 +6,7 @@ import { ImagesComponent } from './images/images.component';
 import { MusicComponent } from './music/music.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeroDetailComponent} from './heroes/hero-detail.component';
 
 const routes: Routes = [
     {
@@ -25,6 +26,10 @@ const routes: Routes = [
     {
     path: 'heroes',
     component: HeroesComponent
+    },
+    {
+    path: 'detail/:id',
+    component: HeroDetailComponent
     },
     {
       path: 'images',
