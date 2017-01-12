@@ -7,7 +7,7 @@ import { MusicComponent } from './music/music.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent} from './heroes/hero-detail.component';
-import { AppCrisisComponent } from './crisis/app.crisis.component';
+import { AppCrisisComponent } from './app.crisis.component';
 
 const routes: Routes = [
     {
@@ -43,6 +43,10 @@ const routes: Routes = [
     {
       path: 'crisis',
       component: AppCrisisComponent
+    },
+    {
+      path:'**',
+      component: BodyComponent
     }
   ];
 

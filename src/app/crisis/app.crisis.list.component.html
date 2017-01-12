@@ -1,0 +1,29 @@
+<div class="section no-pad-bot" id="index-banner">
+   <div class="container">
+      <h1 class="header center red-text accent-4">Crisis Center</h1>
+    <div class="row" *ngFor="let crisis of crises | async" (click)="onSelect(crisis)" 
+    [class.selected]="isSelected(crisis)">
+    <div class="col s12 m12">
+    <div class="card horizontal">
+    <a class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="assets/heartlesssavage2.jpg">
+    </a>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">
+            {{ crisis.name }} 
+          <i class="material-icons right">more_vert</i></span>
+      <p><a href="https://google.com" target="_blank">Search and Destroy</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">{{crisis.name}}<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this crisis that is only revealed upon search.</p>
+    </div>
+  </div>
+</div>        
+</div>
+<a (click)="goBack()" class="btn-floating btn-large waves-effect waves-light purple darken-3">
+    <i class="material-icons">done</i></a>
+        <!-- <router-outlet></router-outlet> -->
+    <h3 class="center red-text darken-4">welcome in crisis center</h3> 
+ </div>
+</div>

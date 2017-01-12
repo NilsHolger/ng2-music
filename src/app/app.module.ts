@@ -18,7 +18,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesService } from './heroes/heroes.service';
 
-import { AppCrisisComponent } from './crisis/app.crisis.component';
+//import { AppCrisisComponent } from './app.crisis.component';
+import { AppCrisisModule } from './crisis/app.crisis.module';
 
 @NgModule({
   declarations: [
@@ -31,14 +32,16 @@ import { AppCrisisComponent } from './crisis/app.crisis.component';
     HeroesComponent,
     HeroDetailComponent,
     DashboardComponent,
-    AppCrisisComponent
+    //AppCrisisComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule.forRoot(),
+    AppCrisisModule,
     AppRoutingModule
+    
   ],
   providers: [HeroesService],
   bootstrap: [AppComponent]

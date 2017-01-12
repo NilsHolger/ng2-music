@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 
 @Component({
-    selector: 'my-app',
+    selector: 'crisis-app',
     template: `
      <div class="section no-pad-bot" id="index-banner">
     <div class="container">
@@ -16,11 +16,10 @@ import { Component } from '@angular/core';
         <a class="waves-effect waves-light btn" [routerLink]="[{outlets: { popup: ['compose']}}]">Contact</a>
     </nav>
       </div>
-    </div>
-    </div>
     <router-outlet></router-outlet>
     <router-outlet name="popup"></router-outlet>
-
+    </div>
+    </div>
     `
 })
 export class AppCrisisComponent {
